@@ -52,7 +52,6 @@
                 <label>Veículo (TAG)</label>
                 <select id="selectTag" required onchange="atualizarDadosVeiculo()">
                     <option value="">-- Selecione --</option>
-                    <option value="TJUR 04">TJUR 04 - SKY MUNCK</option>
                     <option value="TJUR 07">TJUR 07 - SKY MUNCK</option>
                     <option value="TJUR 08">TJUR 08 - CAMINHONETE</option>
                     <option value="TJUR 09">TJUR 09 - SKY MUNCK</option>
@@ -128,13 +127,14 @@
 <script>
     const SENHA_MESTRA = "1234";
     const frota = {
-        "TJUR 04": { placa: "QFA1I50", oleo: "15W40", cor: "Verde", trocado: "89710", prox:"", selo: "2026-09-30", tipoTroca: "km" },
-        "TJUR 07": { placa: "RWR3C75", oleo: "15W40", cor: "Vermelho", trocado: "30000", prox:"35000", selo: "2026-09-30", tipoTroca: "km" },
+        
+        "TJUR 07": { placa: "RWR3C75", oleo: "15W40", cor: "Verde", trocado: "30000", prox:"35000", selo: "2026-11-30", tipoTroca: "km" },
         "TJUR 08": { placa: "QVE5H48", oleo: "5W30", cor: "Azul", trocado: "172018", prox:"182018", selo: "2026-09-30", tipoTroca: "km" },
-        "TJUR 09": { placa: "RXC6J04", oleo: "15W40", cor: "Verde", trocado: "35884", prox:"45884", selo: "2026-08-31", tipoTroca: "km" },
-        "TJUR 13": { placa: "QVD4I38", oleo: "15W40", cor: "Vermelho", trocado: "169323", prox:"174123", selo: "2026-08-31", tipoTroca: "km" },
+        "TJUR 09": { placa: "RXC6J04", oleo: "15W40", cor: "Verde", trocado: "35884", prox:"45884", selo: "2026-11-30", tipoTroca: "km" },
+        "TJUR 13": { placa: "QVD4I38", oleo: "15W40", cor: "Verde", trocado: "169323", prox:"174123", selo: "2026-11-30", tipoTroca: "km" },
         "TJUR 14": { placa: "QVJ5J56", oleo: "15W40", cor: "Azul", trocado: "123025", prox:"133025", selo: "2026-09-30", tipoTroca: "km" }
-
+        
+       // "TJUR 04": { placa: "QFA1I50", oleo: "15W40", cor: "Verde", trocado: "89710", prox:"", selo: "2026-09-30", tipoTroca: "km" },
        // "TJUR 04": { placa: "QFA1I50", oleo: "15W40", cor: "Verde", trocado: "166374", prox:"172000", selo: "30/09/2026", tipoTroca: "data" },
        // "TJUR 07": { placa: "RWR3C75", oleo: "15W40", cor: "Vermelho", trocado: "166374", prox:"172000", selo: "30/09/2026", tipoTroca: "data" },
        // "TJUR 09": { placa: "RXC6J04", oleo: "15W40", cor: "Verde", trocado: "12345", prox:"12345", selo: "30/08/2026", tipoTroca: "data" },
